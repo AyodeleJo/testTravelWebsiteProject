@@ -40,7 +40,7 @@ class RegisterPage(BasePage):
             mail_information[3])
 
         #  def click_country_btn(self):
-        #self.explicitly_wait_and_find_element(MAX_WAIT_INTERVAL, RegisterPageLocators.COUNTRY_BTN).click()
+        # self.explicitly_wait_and_find_element(MAX_WAIT_INTERVAL, RegisterPageLocators.COUNTRY_BTN).click()
 
         # username and password
 
@@ -58,3 +58,4 @@ class RegisterPage(BasePage):
 
     def click_submit_btn(self):
         self.find_element(RegisterPageLocators.SUBMIT_BUTTON).click()
+    # This is a test

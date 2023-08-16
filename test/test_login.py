@@ -37,6 +37,8 @@ class TestLogin:
         register_success_lbl = register_success_page.get_register_success_label()
         assert register_success_lbl.__contains__(username_password[0]), "User registration failed!"
 
+        # end of test 1
+
     def test_sigin_in_user(self, driver, username_password):
         sign_in_page = SignInPage(driver)
         sign_in_page.wait_and_click_signin_btn()
@@ -49,4 +51,4 @@ class TestLogin:
         sign_in_success_page_lbl = sign_in_success_page.sign_in_success_lbl()
         assert sign_in_success_page_lbl == "Login Successfully", "test failed"
 
-
+    # end of test 2
